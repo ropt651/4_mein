@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Энциклопедия FromSoftware</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('main_page') }}">Главная</a> |
+            <a href="{{ url_for('ds1_page') }}">Dark Souls 1</a> |
+            <a href="{{ url_for('ds2_page') }}">Dark Souls 2</a> |
+            <a href="{{ url_for('ds3_page') }}">Dark Souls 3</a> |
+            <a href="{{ url_for('sekiro_page') }}">Sekiro</a> |
+            <a href="{{ url_for('bloodborne_page') }}">Bloodborne</a> |
+            <a href="{{ url_for('about_page') }}">О нас</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    {% block content %}{% endblock %}
+</body>
+</html>
